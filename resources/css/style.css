@@ -11,6 +11,7 @@ header {
   align-items: center;
   border-bottom: 1px solid black;
   margin: 0;
+  z-index: 1;
 }
 
 span {
@@ -42,4 +43,21 @@ header nav {
 
 a {
   color: black;
+}
+
+
+/* Body Section */
+.large-column {
+
+
+}
+
+.medium-column {
+
+
+}
+
+.small-column {
+
+
 }
