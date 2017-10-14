@@ -46,18 +46,20 @@ a {
 }
 
 
-/* Body Section */
-.large-column {
+/* Main Content Container */
 
-
-}
-
-.medium-column {
-
+.column {
 
 }
 
-.small-column {
+.column .large {
 
+}
 
+.lead-story {
+
+}
+
+.image-content span {
+  
 }
