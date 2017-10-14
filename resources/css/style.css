@@ -1,185 +1,211 @@
-header {
-    display: flex;
-    align-items: center;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    height: 80px;
-    border-bottom: 1px solid black;
-    background-color: white;
-    font-family: Verdana;
-    font-size: 14px;
-    font-weight: bold;
+body {
+  margin:auto;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  height: 80px;
+  width: 100%;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  position: fixed;
+  z-index: 1;
+  background: #ffffff;
+  top: 0;
+}
+
+
 .logo {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    padding-left: 30px;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  margin-left: 20px;
 }
 
 .logo img {
-    margin-right: 12px
+  margin-right: 15px;
 }
 
-.mytimes {
-    color: MediumAquamarine;
+.my-times {
+  color: MediumAquamarine;
+
 }
 
-header nav {
-    padding-right: 40px;
+nav {
+  display: inline-block;
+  padding-right: 20px;
 }
 
-nav span {
-    padding: 20px; 10px
-}
-
-header a {
-    color: black;
+nav a {
+  padding-left: 20px;
+  color: black;
 }
 
 .main-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 78px;
-    padding-top: 116px;
-}
-
-.large-column {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 630px;
-    margin-right: 32px;
-}
-
-.medium-column {
-    width: 300px;
-    margin-right: 32px;
-}
-
-.small-column {
-    width: 240px;
-    margin-right: 32px;
-}
-
-.lead-story .image {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-image: url(../images/img-story-main.png);
-    margin-top: 0;
-    font-size: 40px;
-    text-align: left;
-    height: 300px;
-    font-family: Georgia;
-    font-weight: bold;
-    color: white;
-}
-
-.image span {
-    margin-left: 20px;
-}
-
-.narrative {
-    font-family: Georgia;
-    font-size: 17px;
-    color: black;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 116px;
+  justify-content: center;
 }
 
 .main-content h2 {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-family: Georgia;
-    font-size: 30px;
-    font-weight: bold;
-    font-style: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Georgia;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
 }
 
-.image-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-family: Georgia;
-    font-weight: bold;
-    font-size: 30px;
-    color: white;
-    width: 300px;
-    height: 300px;
-    margin-top: 15px;
-    text-align: center;
+.large-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 630px;
+  margin-right: 32px;
 }
 
-.large-column .text-content {
+.medium-column {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin-right: 32px;
+}
+
+.small-column {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+}
+
+.lead-story .image {
+  display: flex;
+  flex-grow: 1;
+  height: 300px;
+  background-image: url(../images/img-story-main.png);
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 40px;
+  color: white;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.image span {
+  display: flex;
+  padding-left: 20px;
+}
+
+.narrative {
+  display: flex;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+.text-story {
+  width: 300px;
+
+}
+
+.large-column .text-story {
     width: 300px;
     height: 250px;
 }
 
-.img-story-2 {
-    background-image: url(../images/img-story-2.png);
+.image-story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  width: 300px;
+  height: 300px;
+  margin-top: 15px;
+  text-align: center;
 }
 
-.img-story-3 {
-    background-image: url(../images/img-story-3.png);
+.image-story span {
+  display: flex;
+  align-items: center;
+  height: 300px;
 }
 
-.img-story-1 {
-    background-image: url(../images/img-story-1.png);
+
+.story1 {
+  background-image: url(../images/img-story-2.png);
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.story2 {
+  background-image: url(../images/img-story-3.png);
+  height: 300px;
+  width: 300px;
+}
+
+.story3 {
+  background-image: url(../images/img-story-1.png);
+  height: 300px;
+  width: 300px;
 }
 
 .news-bites h3 {
-    margin-bottom: 41px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: center;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .news-bites .bite {
-    display: block;
-    padding: 11px 20px;
-    border-bottom: 1px solid black;
-    background-color: WhiteSmoke;
-    font-family: Verdana;
-    font-size: 12px;
-    color: DimGray;
+  display: block;
+  padding: 11px 20px;
+  border-bottom: 1px solid black;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+
 }
 
+
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 325px;
-    background-color: MediumAquamarine;
-    margin: auto;
-    font-family: Verdana;
-    font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 325px;
+  background-color: MediumAquamarine;
+  margin-top: 50px;
+  font-family: Verdana;
+  font-size: 12px;
 }
 
 footer .title {
-    display: inline-block;
-    padding-right: 25px;
-    border-right: 2px solid white;
-    font-family: Georgia;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
+  display: inline-block;
+  padding-right: 25px;
+  border-right: 2px solid white;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
 }
 
 footer nav {
-    display: inline-block;
-    padding-left: 25px;
+  display: inline-block;
+
 }
 
 nav span {
-    display: inline-block;
-    padding: 20px 10px;
+  display: inline-block;
+  padding: 20px 10px;
 }
 
 footer a {
-    color: black;
+  color: black;
 }
